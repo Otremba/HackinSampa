@@ -1,4 +1,5 @@
 <?php
+session_start();
 $conexao = mysqli_connect('localhost', 'root', 'bcd127', 'hackinsampa');
  ?>
 
@@ -17,16 +18,20 @@ $conexao = mysqli_connect('localhost', 'root', 'bcd127', 'hackinsampa');
 </head>
   <body>
     <?php
-      $sql="SELECT * FROM tbl_unidade_saude;";
+      $sql="SELECT * FROM tbl_unidade_saude";
             $select = mysqli_query($conexao,$sql);
             // echo ($sql);
         while ($rsVP = mysqli_fetch_array($select))
+
+        // $_SESSION['img'] = $rsVP['img'];
+
         {
+
        ?>
-    <a href="#">
+    <a href="orgao_saude.php?id=<?php echo($rsVP['ID']) ?>">
       <div class="orgao">
         <div>
-          <img src="img/sp.jpg" height="70px" width="70px">
+          <img src="<?php echo($rsVP['img'])?>" height="70px" width="70px">
         </div>
         <div class="texto">
             <p><?php echo($rsVP['ESTABELECI'])?></p>
@@ -38,6 +43,7 @@ $conexao = mysqli_connect('localhost', 'root', 'bcd127', 'hackinsampa');
       </div>
     </a>
     <?php
+
       }
      ?>
   </body>

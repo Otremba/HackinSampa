@@ -1,3 +1,24 @@
+<?php
+session_start();
+$conexao = mysqli_connect('localhost', 'root', 'bcd127', 'hackinsampa');
+
+  $sql="SELECT * FROM tbl_unidade_saude where ID=".$_GET["id"];
+        $select = mysqli_query($conexao,$sql);
+        // echo ($sql);
+    while ($rsVP = mysqli_fetch_array($select))
+
+    // $_SESSION['img'] = $rsVP['img'];
+
+    {
+      $img=$rsVP['img'];
+      $ESTABELECI=$rsVP['ESTABELECI'];
+      $ENDERECO=$rsVP['ENDERECO'];
+    }
+
+   ?>
+<!-- echo($_SESSION['img']); -->
+
+
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
 <head>
@@ -14,16 +35,16 @@
 
       <div class=" orgao orgao_saude">
         <div>
-          <img src="img/sp.jpg" height="100%" width="100%">
+          <img src="<?php echo($img); ?>" height="100%" width="100%">
 
         </div>
 
 
     <div class="texto_saude orgao_saude texto">
-        <p>Hospital sua mae de costa</p>
+        <p><?php echo($ESTABELECI);?></p>
 
         <div >
-          ngjjhbfubkdfxfgfgndfhfgnfdhdgbsdl;bvsdluibnjklsdbfvsildjkgukwefugfuyegygeggedhgfghfghbvsdluibnjklsdbfvsi
+          <?php echo($ENDERECO);?>
         </div>
     </div>
   </div>
