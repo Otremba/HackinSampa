@@ -1,63 +1,35 @@
-
-
 <!DOCTYPE html>
- <html>
-   <head>
-     <!--Import Google Icon Font-->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <!--Import materialize.css-->
-     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-     <link rel="stylesheet" href="css/style.css">
-     <!--Let browser know website is optimized for mobile-->
-     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-   </head>
-   <body>
-     <!--JavaScript at end of body for optimized loading-->
-     <script type="text/javascript" src="js/materialize.min.js"></script>
-     <img class="responsive-img" src="img/sp.jpg">
-     <div class="row">
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s12">
-            <textarea id="textarea1" class="input-text" data-length="120"></textarea>
-            <label for="textarea1 ">O que você está procurando ?</label>
-          </div>
-        </div>
-      </form>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="logo">
+      <img src="img/logo.png" alt="">
     </div>
-    <div class="container-icones">
-      <a class="azinho" href="saude.php">
-        <div class="icones center">
-          Saúde <br><i class=" material-icons">add_location</i>
-        </div>
-      </a>
-      <a class="azinho" href="#">
-        <div class="icones center">
-          Transporte <br><i class=" material-icons">directions_bus</i>
-        </div>
-      </a>
-      <a class="azinho" href="#">
-        <div class="icones center">
-          Educação <br><i class=" material-icons">import_contacts</i>
-        </div>
-      </a>
-      <a class="azinho" href="#">
-        <div class="icones center">
-          Lazer <br><i class=" material-icons">nature_people</i>
-        </div>
-      </a>
-      <a class="azinho" href="#">
-        <div class="icones center">
-          Cultura <br><i class=" material-icons">public</i>
-        </div>
-      </a>
-
+    <div class="mensagem">
+      Quando você participa, sua cidade se transforma ;)
     </div>
-    <script type="text/javascript">
-    $(document).ready(function() {
-    $('input#input_text, textarea#textarea1').characterCounter();
-    });
-    </script>
-   </body>
- </html>
+    <div class="container_input">
+      <div class="input">
+        <input type="text" name="" value="" placeholder="CPF*">
+      </div>
+      <div class="input">
+        <input type="text" name="" value="" placeholder="Nome*">
+      </div>
+      <div class="input">
+        <input type="text" name="" value="" placeholder="Senha*">
+      </div>
+      <div class="input">
+        <input type="text" name="" value="" placeholder="CEP*">
+      </div>
+      <div class="inputbtn">
+        <a href="home.php">
+          <input type="submit" name="" value="Cadastrar">
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

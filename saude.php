@@ -1,50 +1,43 @@
-<?php
-session_start();
-$conexao = mysqli_connect('localhost', 'root', 'bcd127', 'hackinsampa');
- ?>
-
-
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
-<head>
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-  <link rel="stylesheet" href="css/style.css">
-  <!--Let browser know website is optimized for mobile-->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
   <body>
-    <?php
-      $sql="SELECT * FROM tbl_unidade_saude";
-            $select = mysqli_query($conexao,$sql);
-            // echo ($sql);
-        while ($rsVP = mysqli_fetch_array($select))
+    <div class="logo">
+      <img src="img/logo.png" alt="">
+    </div>
+    <div class="post">
+      <div class="imagem-post">
+        <img src="img/sp.jpg" alt="">
 
-        // $_SESSION['img'] = $rsVP['img'];
-
-        {
-
-       ?>
-    <a href="orgao_saude.php?id=<?php echo($rsVP['ID']) ?>">
-      <div class="orgao">
-        <div>
-          <img src="<?php echo($rsVP['img'])?>" height="70px" width="70px">
-        </div>
-        <div class="texto">
-            <p><?php echo($rsVP['ESTABELECI'])?></p>
-
-            <div class="">
-              <?php echo($rsVP['ENDERECO']) ?>
-            </div>
-        </div>
       </div>
-    </a>
-    <?php
+      <div class="titulo-post">
+        UBS - Vila prudente
+      </div>
+      <div class="titulo-post1">
+        500m - subprefeitura mooca
+      </div>
+      <div class="avalia">
+        8.5
+      </div>
+    </div>
+    <div class="post">
+      <div class="imagem-post">
+        <img src="img/sp.jpg" alt="">
 
-      }
-     ?>
+      </div>
+      <div class="titulo-post">
+        UBS - Vila prudente
+      </div>
+      <div class="titulo-post1">
+        500m - subprefeitura mooca
+      </div>
+      <div class="avalia">
+        8.5
+      </div>
+    </div>
   </body>
 </html>
