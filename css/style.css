@@ -5,3 +5,88 @@ margin-left: auto;
 margin: auto;
 border: solid 1px black;
 }
+.pesquisa{
+  margin-left: 200px;
+  margin-right: auto;
+
+}
+.container-icones{
+  display: flex;
+  /* justify-content:space-around; */
+  flex-wrap: wrap;
+
+}
+.icones{
+  background-color: rgba(51,51,51 , 0.2);
+  border:solid 1px rgba(255, 0, 0, 0.2);
+  width: 100%;
+  height: 60px;
+  margin-top: 5px;
+  padding-top: 4px;
+
+  /* flex-wrap: wrap; */
+}
+.input-text{
+  outline: none;
+  border: none;
+  border-bottom: solid 1px grey;
+  color: red;
+}
+.orgao{
+  height: 117px;
+  width: 100%;
+  background-color: #ccc;
+  padding-top: 8px;
+  box-shadow: #ccc 2px 2px 2px;
+
+
+}
+.orgao img{
+  border-radius: 100%;
+  /* margin-top: 15%; */
+  float: left;
+}
+.orgao p{
+color: black;
+font-weight: bold;
+margin-top: -1px;
+padding-left:  3px;
+text-align: justify;
+
+
+text-overflow:
+
+}
+.texto{
+  background-color: rgba(0,0,0,0);
+  height: 90%;
+  width: 72%;
+  float: left;
+  color: #a5a2a2;
+  word-break: break-all;
+  padding-left: 7px;
+
+
+}
+.orgao_saude{
+  /* background-color: color; */
+padding-top: 8%;
+
+
+}
+.orgao_saude img{
+  border-radius: 100%;
+
+  float: left;
+}
+.orgao_saude p{
+  margin-top: -50px;
+font-size: 15pt;
+width: 150%;
+background-color: rgba(0,0,0,0);
+}
+.texto_saude{
+   /* background-color: #ccc; */
+   margin-top: 70px;
+
+}
