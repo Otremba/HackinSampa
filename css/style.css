@@ -96,18 +96,35 @@ background-color: rgba(0,0,0,0);
   width: 100%;
   /* background-color: brown; */
   border-top: #ccc solid 1px;
+    border-bottom: #ccc solid 1px;
   float: left;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   display: flex;
   justify-content: space-around;
-  flex-flow: row;
+  flex-wrap: wrap;
+  /* flex-flow: row; */
 
 
 
 }
 .filha_servico{
-  height: 40px;
-  width: 40px;
-  background-color: brown;
+  /* height: 60px; */
+  width: 20%;
+  /* background-color: brown; */
   margin-top: 5px;
+  margin-left: 1%;
+  /* color: white; */
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-left: #ccc solid 1px;
+  border-top: #ccc solid 1px;
+  box-shadow: #ccc 2px 2px 2px;
+}
+.avaliar{
+    width: 50px;
+    height: 90%;
+    box-shadow: #ccc 2px 2px 2px;
+    float: left;
+
 }

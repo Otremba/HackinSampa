@@ -28,10 +28,60 @@
     </div>
   </div>
   <div class="servicos">
-    <div class="filha_servico">
 
+    <div class="filha_servico">
+      <div class="">
+        <i class="material-icons">local_hospital</i>
+
+      </div>
+        checap
+    </div>
+    <div class="filha_servico">
+      <div class="">
+
+        <i class="material-icons">local_printshop</i>
+      </div>
+      raiox
+    </div>
+    <div class="filha_servico">
+      <div class="">
+        <i class="material-icons">colorize</i>
+
+      </div>
+        vacinação
+    </div>
+    <div class="filha_servico">
+      <div class="">
+        <i class="material-icons">colorize</i>
+
+      </div>
+        vacinação
+    </div>
+    <div class="filha_servico">
+      <div class="">
+        <i class="material-icons">colorize</i>
+
+      </div>
+        vacinação
     </div>
 
+
+  </div>
+  <div class="avaliar">
+    <form class="" action="" method="post">
+      <div class="avaliar">
+          voce foi atendido rapido?
+      </div>
+      <div class="avaliar">
+          voce foi atendido rapido?
+      </div>
+      <div class="avaliar">
+          voce foi atendido rapido?
+      </div>
+
+
+
+    </form>
 
   </div>
 
