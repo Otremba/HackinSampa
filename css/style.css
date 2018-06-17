@@ -83,7 +83,7 @@
 }
 .titulo-post{
   width: 70%;
-  height: 40px;
+  height: 70px;
   font-size: 40px;
   margin-top: 10px;
   /* background-color: magenta; */
@@ -100,8 +100,8 @@
 }
 .avalia{
   width: 10%;
-  height: 80px;
+  height: 60px;
   background-color: green;
   float: left;
-  font-size: 70px;
+  font-size: 60px;
 }
