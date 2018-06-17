@@ -27,22 +27,31 @@
       </form>
     </div>
     <div class="container-icones">
-
-      <div class="icones center">
-        Saúde <br><i class=" material-icons">add_location</i>
-      </div>
-      <div class="icones center">
-        Transporte <br><i class=" material-icons">directions_bus</i>
-      </div>
-      <div class="icones center">
-        Educação <br><i class=" material-icons">import_contacts</i>
-      </div>
-      <div class="icones center">
-        Lazer <br><i class=" material-icons">nature_people</i>
-      </div>
-      <div class="icones center">
-        Cultura <br><i class=" material-icons">public</i>
-      </div>
+      <a class="azinho" href="saude.php">
+        <div class="icones center">
+          Saúde <br><i class=" material-icons">add_location</i>
+        </div>
+      </a>
+      <a class="azinho" href="#">
+        <div class="icones center">
+          Transporte <br><i class=" material-icons">directions_bus</i>
+        </div>
+      </a>
+      <a class="azinho" href="#">
+        <div class="icones center">
+          Educação <br><i class=" material-icons">import_contacts</i>
+        </div>
+      </a>
+      <a class="azinho" href="#">
+        <div class="icones center">
+          Lazer <br><i class=" material-icons">nature_people</i>
+        </div>
+      </a>
+      <a class="azinho" href="#">
+        <div class="icones center">
+          Cultura <br><i class=" material-icons">public</i>
+        </div>
+      </a>
 
     </div>
     <script type="text/javascript">

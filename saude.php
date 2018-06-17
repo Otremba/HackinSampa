@@ -1,3 +1,8 @@
+<?php
+$conexao = mysqli_connect('localhost', 'root', 'bcd127', 'hackinsampa');
+ ?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
 <head>
@@ -11,21 +16,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
   <body>
+    <?php
+      $sql="SELECT * FROM tbl_unidade_saude;";
+            $select = mysqli_query($conexao,$sql);
+            // echo ($sql);
+        while ($rsVP = mysqli_fetch_array($select))
+        {
+       ?>
     <a href="#">
       <div class="orgao">
         <div>
-          <img src="img/sp.jpg" height="100px" width="100px">
-
+          <img src="img/sp.jpg" height="70px" width="70px">
         </div>
         <div class="texto">
-            <p>Hospital sua mae de costa</p>
+            <p><?php echo($rsVP['ESTABELECI'])?></p>
 
             <div class="">
-              ngjjhbfubkdfxfgfgndfhfgnfdhdgbsdl;bvsdluibnjklsdbfvsildjkgukwefugfuyegygeggedhgfghfghbvsdluibnjklsdbfvsi
+              <?php echo($rsVP['ENDERECO']) ?>
             </div>
         </div>
+      </div>
     </a>
-
-
+    <?php
+      }
+     ?>
   </body>
 </html>
