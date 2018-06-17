@@ -35,7 +35,7 @@ border: solid 1px black;
 .orgao{
   height: 117px;
   width: 100%;
-  background-color: #ccc;
+  background-color: #fff;
   padding-top: 8px;
   box-shadow: #ccc 2px 2px 2px;
 
@@ -58,7 +58,7 @@ text-overflow:
 
 }
 .texto{
-  background-color: rgba(0,0,0,0);
+  background-color: #fff;
   height: 90%;
   width: 72%;
   float: left;
@@ -68,25 +68,46 @@ text-overflow:
 
 
 }
-.orgao_saude{
-  /* background-color: color; */
-padding-top: 8%;
 
-
-}
 .orgao_saude img{
-  border-radius: 100%;
+  border-radius: 00%;
 
   float: left;
 }
 .orgao_saude p{
   margin-top: -50px;
 font-size: 15pt;
-width: 150%;
+width: 100%;
 background-color: rgba(0,0,0,0);
+}
+.orgao_saude div{
+  background-color: rgba(0,0,0,0);
+
+
+
 }
 .texto_saude{
    /* background-color: #ccc; */
    margin-top: 70px;
 
+}
+.servicos{
+  height: auto;
+  width: 100%;
+  /* background-color: brown; */
+  border-top: #ccc solid 1px;
+  float: left;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row;
+
+
+
+}
+.filha_servico{
+  height: 40px;
+  width: 40px;
+  background-color: brown;
+  margin-top: 5px;
 }
